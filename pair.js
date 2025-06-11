@@ -60,7 +60,7 @@ router.get('/', async (req, res) => {
                       result += characters.charAt(Math.floor(Math.random() * characters.length));
                         }
                        const number = Math.floor(Math.random() * Math.pow(10, numberLength));
-                        return `${result}${number}`;
+                        return `SRI-BOT~${result}${number}`;
                         }
 
                         const mega_url = await upload(fs.createReadStream(auth_path + 'creds.json'), `${randomMegaId()}.json`);
